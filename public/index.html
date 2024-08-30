@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Upload Service</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="logo.png" alt="Company Logo" class="logo" />
+      </header>
+      <main>
+        <h2>Upload Your Video or Provide a Link</h2>
+        <form id="videoForm" enctype="multipart/form-data">
+          <!-- Removed language inputs -->
+          <div class="form-group">
+            <input
+              type="url"
+              id="videoLink"
+              name="videoLink"
+              placeholder="Copy and Paste Video Link Here"
+            />
+          </div>
+          <div class="form-group">
+            <p>OR Upload File</p>
+            <div class="file-upload-container" id="dropArea">
+              <input type="file" id="fileUpload" name="fileUpload" />
+              <label for="fileUpload" class="file-upload-label">
+                <span id="fileUploadText">Drop files here or Browse</span>
+                <span class="file-size-limit">(max up to 5GB)</span>
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Enter Email"
+            />
+            <span class="error-message"
+              >Please enter a valid email address</span
+            >
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Enter Name"
+            />
+          </div>
+
+          <button type="submit" class="submit-btn">Submit Video</button>
+        </form>
+      </main>
+    </div>
+    <div id="loadingOverlay" class="loading-overlay">
+      <div class="spinner"></div>
+      <p>Submitting data... Please wait.</p>
+      <div class="progress-container" style="display: none">
+        <div class="progress-bar"></div>
+        <div class="progress-text"></div>
+      </div>
+    </div>
+
+    <div id="successMessage" class="success-message">
+      <h2>Success!</h2>
+      <p>Your video has been successfully submitted.</p>
+      <button id="dismissSuccessBtn" class="dismiss-btn">Dismiss</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
