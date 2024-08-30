@@ -1,6 +1,6 @@
 # Google Video Upload Service
 
-![Video Demo](video_drive.mp4)
+[![Video Demo](https://img.youtube.com/vi/ZLFszmoKKTc/0.jpg)](https://www.youtube.com/watch?v=ZLFszmoKKTc)
 
 ## Description
 
