@@ -4,7 +4,7 @@
 
 ## Description
 
-This project is a web application that allows users to upload videos or provide video links for translation services. It integrates with Google Drive for file storage and uses email notifications for new submissions.
+This project is a web application that allows users to upload videos or provide video links. It integrates with Google Drive for file storage and uses email notifications for new submissions.
 
 ## Features
 
